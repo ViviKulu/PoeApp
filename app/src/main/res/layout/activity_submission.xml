@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/fragment_container"
-    tools:context=".MainActivity">
+    tools:context=".SubmissionActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -42,7 +41,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Start creatively writing"
+            android:text="Head home for inspiration"
             android:textColor="#000"
             android:textSize="12sp"
             android:textStyle="bold"
@@ -53,7 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            app:srcCompat="@drawable/pen_icon"
+            app:srcCompat="@drawable/home_icon"
             app:fabSize="mini"/>
     </LinearLayout>
 
@@ -72,7 +71,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="View your submissions"
+            android:text="Keep at it!"
             android:textColor="#000"
             android:textSize="12sp"
             android:textStyle="bold"
@@ -83,7 +82,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            app:srcCompat="@drawable/owl_icon"
+            app:srcCompat="@drawable/pen_icon"
             app:fabSize="mini"/>
     </LinearLayout>
 
@@ -96,7 +95,6 @@
         android:padding="@dimen/standard_12"
         android:layout_marginBottom="@dimen/fab_margin"
         android:layout_gravity="bottom|end">
-
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"
