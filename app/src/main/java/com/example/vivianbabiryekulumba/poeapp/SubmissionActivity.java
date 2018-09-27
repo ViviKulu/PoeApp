@@ -8,8 +8,9 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class SubmissionActivity extends AppCompatActivity {
 
     FloatingActionButton fab, fab1, fab2;
     LinearLayout fabLayout1, fabLayout2;
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_submission);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -52,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         fab1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, WritingActivity.class);
+                Intent intent = new Intent(SubmissionActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
@@ -60,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         fab2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, SubmissionActivity.class);
+                Intent intent = new Intent(SubmissionActivity.this, WritingActivity.class);
                 startActivity(intent);
             }
         });
