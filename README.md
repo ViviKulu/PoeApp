@@ -1,4 +1,4 @@
-![Alt text](poe_icon.png)
+![Alt text](PoeApp/app/src/main/res/drawable/poeicon.png)
 
 
 Poe
