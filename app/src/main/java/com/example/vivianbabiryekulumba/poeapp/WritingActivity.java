@@ -3,19 +3,29 @@ package com.example.vivianbabiryekulumba.poeapp;
 import android.animation.Animator;
 import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Random;
+
 public class WritingActivity extends AppCompatActivity {
 
+    private static final String TAG = "WritingActivity";
     FloatingActionButton fab, fab1, fab2;
     LinearLayout fabLayout1, fabLayout2;
     View fabBGLayout;
     boolean isFABOpen=false;
+    TextView writing_exercise;
+    TextInputEditText exercise_attempt;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +41,17 @@ public class WritingActivity extends AppCompatActivity {
         fab1 = findViewById(R.id.fab1);
         fab2= findViewById(R.id.fab2);
         fabBGLayout=findViewById(R.id.fabBGLayout);
+
+        writing_exercise = findViewById(R.id.writing_exercise_tv);
+        exercise_attempt = findViewById(R.id.exercise_attempt_et);
+
+        String[] writing_exercises = {"Stop and take a moment to close your eyes. Think of what you hear and see when your eyes are closed. Open your eyes and write what you heard and saw when your eyes were closed yet you heard sound around you.",
+                "Write a letter to your younger self", "Write a story that was once told to you.", "Which of your parents are you more like? How do you feel about that?"};
+
+        Random random = new Random();
+        for(int i = 0; i < writing_exercises.length; i++){
+            writing_exercise.setText(writing_exercises[random.nextInt(4)]);
+        }
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override

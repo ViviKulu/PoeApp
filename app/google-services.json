@@ -1,0 +1,58 @@
+{
+  "project_info": {
+    "project_number": "580919899572",
+    "firebase_url": "https://poeapp-159b1.firebaseio.com",
+    "project_id": "poeapp-159b1",
+    "storage_bucket": "poeapp-159b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580919899572:android:de65379fdaa116aa",
+        "android_client_info": {
+          "package_name": "com.example.vivianbabiryekulumba.poeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "580919899572-e93p36r60g32cpvbo76e09v6tr3mquet.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vivianbabiryekulumba.poeapp",
+            "certificate_hash": "96df10a7aaa06ebcc458e62f90c38692385582d5"
+          }
+        },
+        {
+          "client_id": "580919899572-dv6am46u2qkek7rdlodhrkdf4icgldp3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJEd29nYvzu42gp4ZxLRy4sxex6yL0xP4"
+        },
+        {
+          "current_key": "AIzaSyCJEd29nYvzu42gp4ZxLRy4sxex6yL0xP4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "580919899572-dv6am46u2qkek7rdlodhrkdf4icgldp3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
