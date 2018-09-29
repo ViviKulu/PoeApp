@@ -4,11 +4,11 @@
 Poe
 ===========
 
-Practice creative writing exerecises at your own pace, on your own time wheneve you want.
+Practice creative writing exercises at your own pace, on your own time whenever you'd like.
 
 ----------------------------------------------------------------------------------------
 
-Poe is a creative writing safe space for users that would like to practice on the go to keep creative juices flowing.
+Poe is a creative writing safe space for users that would like to practice on the go to keep your creative juices flowing.
 
 What is so important about practicing creative writing?
 
