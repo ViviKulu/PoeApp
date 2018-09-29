@@ -6,6 +6,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".WritingActivity">
 
+    <Button
+        android:id="@+id/save_button"
+        android:text="save it!"
+        android:textColor="#fff"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="45dp"/>
+
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,7 +30,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:background="#FFC300">
 
             <TextView
@@ -40,11 +51,12 @@
             android:layout_width="match_parent"
             android:layout_height="3dp"
             android:background="@android:color/black"
-            android:layout_marginTop="115dp"/>
+            android:layout_marginTop="150dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <android.support.design.widget.TextInputEditText
                 android:id="@+id/exercise_attempt_et"
@@ -53,7 +65,7 @@
                 android:textColor="#000"
                 android:textSize="12sp"
                 android:layerType="software"
-                android:layout_marginTop="135dp"
+                android:layout_marginTop="165dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginLeft="5dp" />
 
@@ -65,9 +77,11 @@
     <View
         android:id="@+id/fabBGLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorTransBg"
+        android:layout_height="200dp"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimary"
         android:visibility="gone"/>
+
     <LinearLayout
         android:id="@+id/fabLayout1"
         android:layout_width="wrap_content"
@@ -83,7 +97,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Head home for inspiration"
-            android:textColor="#000"
+            android:textColor="#fff"
             android:textSize="12sp"
             android:textStyle="bold"
             android:textAllCaps="true"/>
@@ -113,7 +127,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="View your submissions"
-            android:textColor="#000"
+            android:textColor="#fff"
             android:textSize="12sp"
             android:textStyle="bold"
             android:textAllCaps="true"/>
@@ -144,8 +158,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:gravity="center_vertical"
-            app:srcCompat="@drawable/home_icon"
-            app:fabSize="normal"/>
+            app:fabSize="normal"
+            app:srcCompat="@drawable/home_icon" />
     </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>
