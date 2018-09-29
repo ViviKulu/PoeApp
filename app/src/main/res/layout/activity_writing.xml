@@ -6,19 +6,60 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".WritingActivity">
 
-    <android.support.design.widget.AppBarLayout
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_marginTop="57dp"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="20dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="5dp">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:layout_height="100dp"
+            android:background="#FFC300">
 
-    </android.support.design.widget.AppBarLayout>
+            <TextView
+                android:id="@+id/writing_exercise_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@android:color/black"
+            android:layout_marginTop="115dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/exercise_attempt_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:layerType="software"
+                android:layout_marginTop="135dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
 
     <include layout="@layout/content_main" />
     <View
