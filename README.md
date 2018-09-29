@@ -1,4 +1,4 @@
-![Alt text](Poeicon.png)
+![Alt text](PoeIcon.png)
 
 
 Poe
