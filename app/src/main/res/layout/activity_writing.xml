@@ -77,9 +77,11 @@
     <View
         android:id="@+id/fabBGLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorTransBg"
+        android:layout_height="200dp"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimary"
         android:visibility="gone"/>
+
     <LinearLayout
         android:id="@+id/fabLayout1"
         android:layout_width="wrap_content"
@@ -95,7 +97,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Head home for inspiration"
-            android:textColor="#000"
+            android:textColor="#fff"
             android:textSize="12sp"
             android:textStyle="bold"
             android:textAllCaps="true"/>
@@ -125,7 +127,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="View your submissions"
-            android:textColor="#000"
+            android:textColor="#fff"
             android:textSize="12sp"
             android:textStyle="bold"
             android:textAllCaps="true"/>

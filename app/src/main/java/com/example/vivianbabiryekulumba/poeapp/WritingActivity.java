@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.vivianbabiryekulumba.poeapp.database.AttemptDao;
 import com.example.vivianbabiryekulumba.poeapp.database.AttemptDatabase;
@@ -68,8 +69,7 @@ public class WritingActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 attemptPresenter.addAttempt(writing_exercise.getText().toString(), exercise_attempt.getText().toString());
-                Intent intent = new Intent(WritingActivity.this, AttemptListActivity.class);
-                startActivity(intent);
+                Toast.makeText(getApplicationContext(), "Saved your work! Check out submissions tab!", Toast.LENGTH_SHORT).show();
                 Log.d(TAG, "onClick: writing activity" + writing_exercise.getText().toString() + exercise_attempt.getText().toString());
             }
         });

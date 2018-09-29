@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import com.example.vivianbabiryekulumba.poeapp.R;
 import com.example.vivianbabiryekulumba.poeapp.database.AttemptPresenter;
 
@@ -53,13 +52,14 @@ public class AttemptListAdapter extends RecyclerView.Adapter<AttemptListAdapter.
         }
 
         @Override
-        public void setAttempt(String attempt) {
-            attempt_exercise_content.setText(attempt);
+        public void setInstruction(String instruction) {
+            attempt_exercise_instruction.setText(instruction);
+            Log.d(TAG, "setInstruction: "  + instruction);
         }
 
         @Override
-        public void setInstruction(String instruction) {
-            attempt_exercise_instruction.setText(instruction);
+        public void setAttempt(String attempt) {
+            attempt_exercise_content.setText(attempt);
         }
     }
 }

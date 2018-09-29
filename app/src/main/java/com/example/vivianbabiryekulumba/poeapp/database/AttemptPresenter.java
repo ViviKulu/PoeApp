@@ -40,7 +40,7 @@ public class AttemptPresenter{
     }
 
     public void bindView(AttemptListItem attemptListItem, int position) {
-        attemptListItem.setInstruction(attempts[position].getAttempt());
+        attemptListItem.setInstruction(attempts[position].getInstruction());
         attemptListItem.setAttempt(attempts[position].getAttempt());
 
     }
