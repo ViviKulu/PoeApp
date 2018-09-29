@@ -1,4 +1,6 @@
-![Alt text](Poeicon.png)
+![Alt text](poeicon.png)
+
+
 Poe
 ===========
 
