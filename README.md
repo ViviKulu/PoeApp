@@ -1,4 +1,4 @@
-![Alt text](res/drawable/poeicon.png)
+![Alt text](poeicon.png)
 
 
 Poe
