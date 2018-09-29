@@ -17,7 +17,6 @@ import com.example.vivianbabiryekulumba.poeapp.controllers.PoemistAdapter;
 import com.example.vivianbabiryekulumba.poeapp.models.Poem;
 import com.example.vivianbabiryekulumba.poeapp.service.PoemService;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -41,8 +40,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
         recyclerView = findViewById(R.id.poemist_recyclerview);
 
         fabLayout1 = findViewById(R.id.fabLayout1);
@@ -81,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
         fab2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, SubmissionActivity.class);
+                Intent intent = new Intent(MainActivity.this, AttemptListActivity.class);
                 startActivity(intent);
             }
         });
